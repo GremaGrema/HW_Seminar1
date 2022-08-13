@@ -1,8 +1,17 @@
-﻿ int i = 0;
-            int n = Convert.ToInt32(textBox1.Text);
-            int m = Convert.ToInt32(textBox2.Text);
-            for (i = n; i >= m; i++)
-            {
-                if (i % 2 == 0)
-            {
-                    textBox3.Text += Convert.ToString(i);
+﻿Console.WriteLine("Введите число : ");
+string s_N = Console.ReadLine();
+int N = int.Parse(s_N);
+int m = 1;
+
+while (true)
+{
+	if (m % 2 == 0)
+	{
+		Console.Write(m + " ");
+	}
+	if (m > N)
+	{
+		break;
+	}
+	m++;
+}
